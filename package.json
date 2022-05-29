@@ -12,5 +12,30 @@
   },
   "dependencies": {
     "vue": "^3.2.36"
-  }
+  },
+  "keywords": [
+      "vue",
+      "vue3",
+      "form",
+      "vue form",
+      "vue3 form",
+      "form validation",
+      "form validator",
+      "vue form validation",
+      "vue form validator",
+      "vue3 form validation",
+      "vue3 form validator",
+      "vue input",
+      "vue input validator",
+      "vue input validation",
+      "nuxt",
+      "nuxt3",
+      "nuxt 3",
+      "nuxt3 form",
+      "nuxt 3 form",
+      "nuxt3 form validation",
+      "nuxt 3 form validation",
+      "nuxt3 form validator",
+      "nuxt 3 form validator"
+    ]
 }
