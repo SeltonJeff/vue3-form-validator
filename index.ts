@@ -9,7 +9,7 @@ import {
   ref,
 } from "vue";
 
-export const Form = defineComponent({
+const Form = defineComponent({
   name: "Form",
   template: `
       <form
@@ -67,7 +67,7 @@ export const Form = defineComponent({
   },
 });
 
-export const Input = defineComponent({
+const Input = defineComponent({
   name: "Input",
   template: `
       <div class="input" :class="'theme-' + theme ? theme : 'default' + 'input'">
@@ -173,3 +173,5 @@ export const Input = defineComponent({
 //     Me.maxLength = patternLiterals.length;
 //   }
 // };
+
+module.exports = { Form, Input };
