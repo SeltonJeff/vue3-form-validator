@@ -1,6 +1,6 @@
 {
   "name": "vue3-form-validator",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Form validator for vue3",
   "main": "index.ts",
   "author": "Selton Jeffeson",
