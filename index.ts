@@ -1,9 +1,9 @@
 // @ts-ignore
-import Form from "Form/index.vue";
+import Form from "./Form/index.vue";
 // @ts-ignore
-import Input from "Input/index.vue";
+import Input from "./Input/index.vue";
 
-export const Validators = {
+const Validators = {
   required(el: HTMLInputElement) {
     if (!el.value) return "Este campo é obrigatório.";
     return true;
@@ -59,4 +59,7 @@ export const Validators = {
 //   }
 // };
 
+export { Form };
+export { Input };
+export { Validators };
 export default { Form, Input, Validators };
