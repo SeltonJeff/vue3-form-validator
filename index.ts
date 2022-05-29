@@ -5,6 +5,26 @@ import Input from "./Input/index.vue";
 
 const Validators = {
   required(el: HTMLInputElement) {
+    if (!el.value) return "This field is required.";
+    return true;
+  },
+  password(el: HTMLInputElement) {
+    const regex =
+      /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/;
+    if (el.value !== "" && !regex.test(el.value))
+      return "The password must contain at least one number, one uppercase letter, one lowercase letter, and one special character.";
+    return true;
+  },
+  email(el: HTMLInputElement) {
+    const regex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+    if (el.value !== "" && !regex.test(el.value))
+      return "Enter a valid email address";
+    return true;
+  },
+};
+
+const Validators_ptBR = {
+  required(el: HTMLInputElement) {
     if (!el.value) return "Este campo é obrigatório.";
     return true;
   },
@@ -62,4 +82,4 @@ const Validators = {
 export { Form };
 export { Input };
 export { Validators };
-export default { Form, Input, Validators };
+export default { Form, Input, Validators, Validators_ptBR };
