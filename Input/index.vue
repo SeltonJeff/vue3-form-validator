@@ -1,5 +1,5 @@
 <template>
-  <div class="input" :class="'theme-' + theme ? theme : 'default' + 'input'">
+  <div class="input" :class="`theme-${theme ? theme : 'default'} input`">
     <label v-if="label" :for="id" class="input__label">
       {{ label }}
     </label>
