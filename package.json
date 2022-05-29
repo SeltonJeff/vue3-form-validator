@@ -1,0 +1,16 @@
+{
+  "name": "vue3-form-validator",
+  "version": "0.0.1",
+  "description": "Form validator for vue3",
+  "main": "/dist/index.ts",
+  "author": "Selton Jeffeson",
+  "license": "MIT",
+  "private": null,
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "prettier": "^2.6.2"
+  },
+  "dependencies": {
+    "vue": "^3.2.36"
+  }
+}
